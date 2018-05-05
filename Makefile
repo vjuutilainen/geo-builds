@@ -5,7 +5,7 @@ src/paavo_postialueet.json:
 
 # Strip statistics (requires jq)
 build/paavo_zipcode_areas_geometry.json: src/paavo_postialueet.json
-	jq "{features: [.features[] | {geometry: .geometry, id: .properties.posti_alue, properties: {kunta: .properties.kunta, nimi: .properties.nimi}, type: .type}], type: .type}" < $< > $@
+	jq -c "{features: [.features[] | {geometry: .geometry, id: .properties.posti_alue, properties: {kunta: .properties.kunta, nimi: .properties.nimi}, type: .type}], type: .type}" < $< > $@
 
 # TopoJSON, no quantization
 build/paavo_zipcode_areas_geometry_topo.json: build/paavo_zipcode_areas_geometry.json
