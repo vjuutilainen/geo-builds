@@ -1,6 +1,6 @@
 # Geo builds
 
-Various geodata in friendly format
+Various geodata in different formats
 
 - Finnish Zip Code Areas / Suomen postinumeroalueet (TopoJSON, including properties)
 

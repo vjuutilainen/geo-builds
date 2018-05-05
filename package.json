@@ -1,0 +1,23 @@
+{
+  "name": "geo-builds",
+  "version": "0.1.0",
+  "description": "Various geodata in different formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjuutilainen/geo-builds.git"
+  },
+  "keywords": [],
+  "author": "Ville Juutilainen <vjuutilainen@gmail.com> (https://www.villejuutilainen.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vjuutilainen/geo-builds/issues"
+  },
+  "homepage": "https://github.com/vjuutilainen/geo-builds#readme",
+  "devDependencies": {
+    "topojson": "^3.0.2"
+  }
+}
